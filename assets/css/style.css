@@ -176,6 +176,40 @@ h1, h2, h3, h4, h5, h6{
   text-decoration: none;
 }
 
+/* social-icons */
+.social-icons{
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.btn-circle {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.btn-circle i {
+  position: relative;
+  top: -1px;
+}
+
+.btn-circle-sm {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 1.1rem;
+}
+
+/* cv button */
+.downloadCV{
+  padding: 25px 0;
+}
+
+
+
 /* first section ends */
 
 
@@ -213,38 +247,6 @@ h1, h2, h3, h4, h5, h6{
 .about-right ul li a{
   text-decoration: none;
   color: #767676;
-}
-
-/* social-icons */
-.social-icons{
-  padding-top: 10px;
-  padding-bottom: 5px;
-}
-
-.btn-circle {
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  text-align: center;
-  padding: 0;
-  border-radius: 50%;
-}
-
-.btn-circle i {
-  position: relative;
-  top: -1px;
-}
-
-.btn-circle-sm {
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
-  font-size: 0.9rem;
-}
-
-/* cv button */
-.downloadCV{
-  padding: 25px 0;
 }
 
 /* Box Stats */
