@@ -203,6 +203,11 @@ h1, h2, h3, h4, h5, h6{
   border-radius: 50%;
 }
 
+.btn-circle:hover{
+  background-color: #2D98F0;
+  border: #2D98F0;
+}
+
 .btn-circle i {
   position: relative;
   top: -1px;
@@ -529,6 +534,34 @@ h1, h2, h3, h4, h5, h6{
     width: 5px;
   }
   
+}
+
+/* service part */
+.service-content{
+  padding: 40px 0;
+  margin-left: 0;
+}
+
+.service-card{
+  height: 100%;
+  padding: 30px;
+  background-color: #4155B2;
+}
+
+.service-card i{
+  font-size: 50px;
+  margin-bottom: 25px;
+  color: #E9EBEC;
+}
+
+.service-card h5{
+  color: #E9EBEC;
+  font-weight: 600;
+}
+
+.service-card p{
+  font-size: 15px;
+  color: #E9EBEC;
 }
 
 #topside{
