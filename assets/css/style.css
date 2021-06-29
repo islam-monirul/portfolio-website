@@ -90,6 +90,18 @@ h1, h2, h3, h4, h5, h6{
   margin-bottom: 15px;
 }
 
+.footer{
+  margin-top: 35px;
+}
+
+.footer p{
+  color: #767676;
+}
+
+.footer p span{
+  color:#EC5554
+}
+
 .leftside-inner h5{
   font-weight: 800;
   margin-bottom: 25px;
@@ -464,6 +476,12 @@ h1, h2, h3, h4, h5, h6{
 
   #rightside{
     padding-left: 370px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1120px){
+  #leftside{
+    padding: 0 50px;
   }
 }
 
