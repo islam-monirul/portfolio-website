@@ -5,7 +5,6 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6{
-  /* font-family: 'Playfair Display', serif; */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -34,8 +33,6 @@ h1, h2, h3, h4, h5, h6{
 
 .leftside-inner{
   padding: 10px;
-  /* border: 1px solid #E9EBEC; */
-  /* text-align: center; */
   position: relative;
   top: 50%;
   left: 50%;
