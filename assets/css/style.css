@@ -565,10 +565,75 @@ h1, h2, h3, h4, h5, h6{
   color: #E9EBEC;
 }
 
+
+
+/* skill section */
+.sub-sub-subsection{
+  color: #EC5554;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+}
+
+.skill-section{
+  padding-top: 30px;
+}
+
+.progress-content{
+  /* background-color: #EC5554; */
+  text-align: center;
+}
+
+.progress-title{
+  margin-top: 40px;
+}
+
+.progress-bars{ 
+  margin: auto; 
+  background: #2bb0ef;
+  width: 80px; 
+  height: 80px; 
+  transform: rotate(45deg); 
+  position: relative;
+}
+
+.progress-bars h3 { 
+  line-height: 80px; 
+  text-align: center;
+  color: #E9EBEC;
+  transform: rotate(-45deg);
+}
+
+.progress-bars:before{
+  position: absolute; 
+  content: ""; 
+  border: solid 5px #595959; 
+  border-width: 5px 0px 0px 5px; 
+  width: 20px; 
+  height: 20px; 
+  top: -9px; 
+  left: -9px; 
+  bottom: -9px; 
+  right: -9px; 
+  z-index: 10;
+}
+
+.progress-bars:after{
+  position: absolute; 
+  content: ""; 
+  border: solid 5px #2bb0ef; 
+  border-width: 5px 5px 5px 5px; 
+  width: 100px; 
+  height: 100px; 
+  top: -10px; 
+  left: -10px; 
+  bottom: -9px; 
+  right: -9px;
+}
+
+
 #topside{
   width: 100%;
   height: 50px;
   background-color: #FFF;
 }
-
-
