@@ -226,7 +226,29 @@ h1, h2, h3, h4, h5, h6{
   padding: 25px 0;
 }
 
+/* freelance button */
+.freelanceProfile{
+  padding: 25px 0;
+}
 
+.freelanceProfile img{
+  height: 17.6px;
+  width: 17.6px;
+  margin-top: -5px;
+}
+
+.btn-fiverr{
+  padding: 10px 10px;
+  border-radius: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-fiverr:hover{
+  background-color: #1DBF73;
+  border-color: #1DBF73;
+  color: black;
+}
 
 /* first section ends */
 
@@ -415,6 +437,165 @@ h1, h2, h3, h4, h5, h6{
   color: #EC5554;
 }
 
+/* education-part ends */
+
+/* service part */
+.service-content{
+  padding: 40px 0;
+  margin-left: 0;
+}
+
+.service-card{
+  height: 100%;
+  padding: 30px;
+  background-color: #4155B2;
+}
+
+.service-card i{
+  font-size: 50px;
+  margin-bottom: 25px;
+  color: #E9EBEC;
+}
+
+.service-card h5{
+  color: #E9EBEC;
+  font-weight: 600;
+}
+
+.service-card p{
+  font-size: 15px;
+  color: #E9EBEC;
+}
+
+
+
+/* skill section */
+.sub-sub-subsection{
+  color: #EC5554;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+}
+
+.skill-section{
+  padding-top: 30px;
+}
+
+.skill-section h5{
+  color: #767676;
+}
+
+.progress-content{
+  /* background-color: #EC5554; */
+  text-align: center;
+}
+
+.progress-title{
+  margin-top: 40px;
+}
+
+.progress-bars{ 
+  margin: auto; 
+  background: #2bb0ef;
+  width: 60px; 
+  height: 60px; 
+  transform: rotate(45deg); 
+  position: relative;
+}
+
+.second-category .progress-bars{
+  background: #4155B2;
+}
+
+.progress-bars h3 {
+  font-size: 20px;
+  line-height: 60px; 
+  text-align: center;
+  color: #E9EBEC;
+  transform: rotate(-45deg);
+}
+
+.progress-bars:before{
+  position: absolute; 
+  content: ""; 
+  border: solid 5px #E9EBEC; 
+  border-width: 5px 0px 0px 5px; 
+  width: 75px; 
+  height: 75px; 
+  top: -9px; 
+  left: -9px; 
+  bottom: -9px; 
+  right: -9px; 
+  z-index: 10;
+}
+
+.percent-60 .progress-bars:before{
+  height: 70px;
+  width: 70px;
+}
+
+.percent-65 .progress-bars:before{
+  height: 60px;
+  width: 60px;
+}
+
+.percent-70 .progress-bars:before{
+  height: 50px;
+  width: 50px;
+}
+
+.percent-75 .progress-bars:before{
+  height: 40px;
+  width: 40px;
+}
+
+.percent-80 .progress-bars:before{
+  height: 30px;
+  width: 30px;
+}
+
+.percent-85 .progress-bars:before{
+  height: 20px;
+  width: 20px;
+}
+
+.percent-90 .progress-bars:before{
+  height: 10px;
+  width: 10px;
+}
+
+.progress-bars:after{
+  position: absolute; 
+  content: ""; 
+  border: solid 5px #2bb0ef; 
+  border-width: 5px 5px 5px 5px; 
+  width: 80px; 
+  height: 80px; 
+  top: -10px; 
+  left: -10px; 
+  bottom: -9px; 
+  right: -9px;
+}
+
+.second-category .progress-bars:after{
+  border-color: #4155B2;
+}
+
+
+/* clients reviews section */
+
+
+/* small screen menu */
+#topside{
+  width: 100%;
+  height: 50px;
+  background-color: #FFF;
+}
+
+
+
+
+/* media queries */
 @media only screen and (max-width: 991px) {
   .main-timeline .timeline-content {
       padding: 10px 0 10px 30px
@@ -512,8 +693,6 @@ h1, h2, h3, h4, h5, h6{
   
 }
 
-/* education-part ends */
-
 @media only screen and (min-width: 1200px) and (max-width: 1390px){
   #leftside{
     width: 400px;
@@ -535,105 +714,4 @@ h1, h2, h3, h4, h5, h6{
     width: 5px;
   }
   
-}
-
-/* service part */
-.service-content{
-  padding: 40px 0;
-  margin-left: 0;
-}
-
-.service-card{
-  height: 100%;
-  padding: 30px;
-  background-color: #4155B2;
-}
-
-.service-card i{
-  font-size: 50px;
-  margin-bottom: 25px;
-  color: #E9EBEC;
-}
-
-.service-card h5{
-  color: #E9EBEC;
-  font-weight: 600;
-}
-
-.service-card p{
-  font-size: 15px;
-  color: #E9EBEC;
-}
-
-
-
-/* skill section */
-.sub-sub-subsection{
-  color: #EC5554;
-  font-weight: 300;
-  letter-spacing: 3px;
-  margin-bottom: 60px;
-}
-
-.skill-section{
-  padding-top: 30px;
-}
-
-.progress-content{
-  /* background-color: #EC5554; */
-  text-align: center;
-}
-
-.progress-title{
-  margin-top: 40px;
-}
-
-.progress-bars{ 
-  margin: auto; 
-  background: #2bb0ef;
-  width: 80px; 
-  height: 80px; 
-  transform: rotate(45deg); 
-  position: relative;
-}
-
-.progress-bars h3 { 
-  line-height: 80px; 
-  text-align: center;
-  color: #E9EBEC;
-  transform: rotate(-45deg);
-}
-
-.progress-bars:before{
-  position: absolute; 
-  content: ""; 
-  border: solid 5px #595959; 
-  border-width: 5px 0px 0px 5px; 
-  width: 20px; 
-  height: 20px; 
-  top: -9px; 
-  left: -9px; 
-  bottom: -9px; 
-  right: -9px; 
-  z-index: 10;
-}
-
-.progress-bars:after{
-  position: absolute; 
-  content: ""; 
-  border: solid 5px #2bb0ef; 
-  border-width: 5px 5px 5px 5px; 
-  width: 100px; 
-  height: 100px; 
-  top: -10px; 
-  left: -10px; 
-  bottom: -9px; 
-  right: -9px;
-}
-
-
-#topside{
-  width: 100%;
-  height: 50px;
-  background-color: #FFF;
 }
