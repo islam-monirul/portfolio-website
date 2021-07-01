@@ -568,11 +568,7 @@
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-		<script>
-			setTimeout(function(){
-				$('.loader_bg').fadeToggle();
-			}, 1500);
-		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 		<script type="text/javascript">
 			var $owl = $('#carousel1');
@@ -607,6 +603,12 @@
 				var $speed = 1000;
 				$owl.trigger('to.owl.carousel', [$(this).data('position'), $speed]);
 			});
+		</script>
+
+		<script>
+			setTimeout(function(){
+				$('.loader_bg').fadeToggle();
+			}, 1000);
 		</script>
 
 	</body>
