@@ -124,6 +124,20 @@ h1, h2, h3, h4, h5, h6{
   padding: 50px 0;
 }
 
+.subsections:last-child{
+  border: none;
+  padding-bottom: 0;
+}
+
+footer{
+  height: 50px;
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+  background-color: #2D98F0;
+  display: none;
+}
+
 .sub-subsection{
   color: #2D98F0;
   font-weight: 300;
@@ -917,6 +931,11 @@ h1, h2, h3, h4, h5, h6{
   .main-timeline .title {
       margin-bottom: 10px
   }
+
+  footer{
+    display: block;
+  }
+  
 }
 
 @media only screen and (min-width: 768px) and (max-width: 974px){
@@ -1017,5 +1036,9 @@ h1, h2, h3, h4, h5, h6{
   .projects .itemBox{
     width: 300px;
     height: 150px;
+  }
+
+  .content-box{
+    margin-left: 5px;
   }
 }
