@@ -48,8 +48,8 @@
 									<li><a href="#education">Education</a></li>
 									<li><a href="#services">Services</a></li>
 									<li><a href="#skills">Skills</a></li>
-									<li><a href="#testimonials">Client Reviews</a></li>
 									<li><a href="#experiences">Experiences</a></li>
+									<li><a href="#testimonials">Client Reviews</a></li>
 									<li><a href="#works">My Works</a></li>
 									<li><a href="#contact">Contact</a></li>
 								</ul>
@@ -403,6 +403,32 @@
 
 						</section>
 
+						<section class="subsections" id="experiences">
+							<p class="sub-subsection">Work</p>
+							<h4 class="subsection">Experience</h4>
+
+							<div class="education-timeline">
+								<div class="main-timeline">
+
+									<!-- start experience section-->
+									<div class="timeline">
+										<div class="icon"></div>
+										<div class="timeline-content">
+										<h5 class="title">Web Developer & Graphic Designer</h5>
+										<p class="description">
+												<span>Freelance</span> <br>
+												<strong style="color: #30A499;">Fiverr Marketplace</strong> <br>
+												<span style="color: #EC5554;"><strong>2019 - 2021</strong></span>
+										
+											</p>
+										</div>
+									</div>
+									<!-- end experience section-->
+								 </div>
+							</div>
+
+						</section>
+
 						<!-- client reviews -->
 						<section class="subsections" id="testimonials">
 							<p class="sub-subsection">Some of my</p>
@@ -523,10 +549,82 @@
 						</section>
 
 						<section class="subsections" id="works">
+							<p class="sub-subsection">Portfolio</p>
+							<h4 class="subsection">My Works</h4>
 
-						</section>
-
-						<section class="subsections" id="experiences">
+							<ul>
+								<li class="list active" data-filter="all">All</li>
+								<li class="list" data-filter="frontend">Frontend</li>
+								<li class="list" data-filter="js">JavaScript</li>
+								<li class="list" data-filter="php">PHP</li>
+								<li class="list" data-filter="laravel">Laravel</li>
+								<li class="list" data-filter="wordpress">Wordpress</li>
+							</ul>
+							<div class="projects">
+								<div class="itemBox frontend">
+									<a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+										<img src="assets/portfolio/personal-website.PNG" alt="">
+										<div class="project-overlay"></div>
+										<div class="hover-content">
+											<p class="hover-description text-uppercase mb-0">
+												Portfolio Website
+											</p>
+										</div>
+									</a>
+								</div>
+								<div class="itemBox js">
+									<a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+										<img src="assets/portfolio/personal-website.PNG" alt="">
+										<div class="project-overlay"></div>
+										<div class="hover-content">
+											<p class="hover-description text-uppercase mb-0">
+												JavaScript Website
+											</p>
+										</div>
+									</a>
+								</div>
+								<div class="itemBox php">
+									<a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+										<img src="assets/portfolio/personal-website.PNG" alt="">
+										<div class="project-overlay"></div>
+										<div class="hover-content">
+											<p class="hover-description text-uppercase mb-0">
+												PHP Website
+											</p>
+										</div>
+									</a>
+								</div>
+								<div class="itemBox laravel">
+									<a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+										<img src="assets/portfolio/personal-website.PNG" alt="">
+										<div class="project-overlay"></div>
+										<div class="hover-content">
+											<p class="hover-description text-uppercase mb-0">
+												Laravel Website
+											</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							
+							<!-- Modal -->
+							<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+								<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+									<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+									...
+									</div>
+									<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+									<button type="button" class="btn btn-primary">Understood</button>
+									</div>
+								</div>
+								</div>
+							</div>
 
 						</section>
 
@@ -609,6 +707,25 @@
 			setTimeout(function(){
 				$('.loader_bg').fadeToggle();
 			}, 1000);
+		</script>
+
+		<script>
+			$(document).ready(function(){
+				$('.list').click(function(){
+					const value = $(this).attr('data-filter');
+					if(value == 'all'){
+						$('.itemBox').show('1000');
+					}
+					else{
+						$('.itemBox').not('.'+value).hide('1000');
+						$('.itemBox').filter('.'+value).show('1000');
+					}
+				});
+
+				$('.list').click(function(){
+					$(this).addClass('active').siblings().removeClass('active');
+				});
+			});
 		</script>
 
 	</body>
